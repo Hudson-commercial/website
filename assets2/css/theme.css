@@ -5,8 +5,18 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url('https://fonts.googleapis.com/css?family=Oswald:400|Roboto:400,400i,700');
-/*Reset styles */
+ @import '~pretty-checkbox/src/pretty-checkbox.scss';
+/*my styles */
+.pro-img {
+  background: #fff;
+  padding-top: 30px;
+ }
+ .pro-img img {
+   margin: 0 auto;
+   max-height: 300px;
+ }
 
+/*end of my styles*/
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -99,6 +109,9 @@ hr {
   box-sizing: content-box;
   height: 0;
 }
+hr-white {
+b
+}
 pre {
   overflow: auto;
 }
@@ -183,23 +196,6 @@ table {
 td,
 th {
   padding: 0;
-}
-/*code for profile images */
-.pro-img {
-  background: #fff;
-  padding-top: 30px;
- }
- .pro-img img {
-   margin: 0 auto;
-   max-height: 300px;
- } 
- .section_portfolio {
-  max-width: 70%;
-  margin: 0 auto;
-  margin-bottom: 50px;
- }
-#myFrame {
-  all: none;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -1151,7 +1147,7 @@ hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+
 }
 .sr-only {
   position: absolute;
@@ -7734,9 +7730,11 @@ form .help-block {
   margin-bottom: 15px;
 }
 .section_portfolio {
-  padding-top: 0;
+  padding-top: 5px;
   padding-bottom: 0;
   border-top: 0 !important;
+  background-color:  #212121;
+
 }
 .section_portfolio + [class*="section_"] {
   border-top: 0;
@@ -7856,7 +7854,7 @@ form .help-block {
 }
 .section_team .team__item__footer {
   padding: 30px;
-  background-color: white;
+  background-color: whitesmoke;
   border: 1px solid #eee;
   border-top: 0;
 }
@@ -7954,8 +7952,9 @@ form .help-block {
   margin-bottom: 25px;
   padding: 30px;
   border: 1px solid #eee;
-  background-color: white;
+  background-color: #424242;
 }
+.section_testimonials .testimonials__blockquote h3{ color: #fff;}
 @media (min-width: 1200px) {
   .section_testimonials .testimonials__blockquote {
     padding: 50px;
@@ -7965,6 +7964,7 @@ form .help-block {
   margin-bottom: 25px;
   font-size: 15px;
   font-style: italic;
+  color: white !important;
 }
 .section_testimonials .testimonials__blockquote > p:before {
   content: open-quote;
@@ -8065,7 +8065,7 @@ form .help-block {
   right: 0;
   bottom: 50%;
   left: 0;
-  background: url(../img/hudson-river.jpg) no-repeat center center / cover;
+  background: url(../img/1.jpg) no-repeat center center / cover;
   z-index: -1;
 }
 .section_contact .page-header {
@@ -8175,8 +8175,12 @@ form .help-block {
 .section_services .services__item {
   margin-bottom: 25px;
   padding: 30px;
-  background-color: #f5f5f5;
+  background-color: #212121;
+  color:  #f9f9f9;
   text-align: center;
+}
+.section_services .services__item h3{
+  color: #f9f9f9;
 }
 @media (min-width: 768px) {
   .section_services .services__item {
@@ -8332,3 +8336,22 @@ form .help-block {
   background-color: white;
   color: #777;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  display: block;
+  }
